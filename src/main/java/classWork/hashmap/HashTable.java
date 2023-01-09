@@ -96,6 +96,34 @@ public class HashTable {
             }
             return null;
         }
+
+
+
+    public static Hashtable<String, Integer> getProductsInRangeWithAP2(
+            Hashtable<String, Integer> products, int beginRange, int endRange) {
+        Hashtable<String, Integer> result = new Hashtable<>();
+
+        if(beginRange>0 && endRange<100 && beginRange<endRange){
+            for(String key : products.keySet()){
+                // a - > should be in range
+                // p - > not obligatory to be in range
+//                    System.out.println(key + " "+products.get(key));
+//                    System.out.println((key.charAt(0)=='a' && products.get(key) >= beginRange &&
+//                            products.get(key) <= endRange));
+//                    System.out.println();
+
+                if((key.charAt(0)=='a' && products.get(key) >= beginRange &&
+                        products.get(key) <= endRange )
+                        || key.charAt(0)=='p'){
+                    result.put(key, products.get(key));
+                }
+            }
+        }
+        else{
+            System.out.println("Sorry, incorrect range was given. Give the correct range");
+        }
+        return result;
+    }
     }
 
 

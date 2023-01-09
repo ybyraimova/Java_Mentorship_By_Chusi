@@ -18,20 +18,20 @@ public class isEmptyArrayList {
         companies.add("Uber");
         
         
-        String [] arrayOfCompanies = new String[companies.size()];
+        String [] arrayOfCompanies = new String[companies.size()]; //list to array
         companies.toArray(arrayOfCompanies);
 
         System.out.println(Arrays.toString(arrayOfCompanies));
         
         String [] geeks = {"Saikal", "Myrzakhan", "Ilgiz", "Zhamal"};
-        List<String> arrayListGeeks = Arrays.asList(geeks);
+        List<String> arrayListGeeks = Arrays.asList(geeks); //array to list;
         
-        String [] arrayofGeeks = new String[arrayListGeeks.size()];
+        String [] arrayofGeeks = new String[arrayListGeeks.size()]; // list to array
         arrayListGeeks.toArray(arrayofGeeks);
         
         
         String [] testers = {"Alex", "Amanda", "Gabby", "Haley"};
-        List <String> al = new ArrayList(Arrays.asList(testers));
+        List <String> al = new ArrayList(Arrays.asList(testers)); // array to string
 
         System.out.println(al);
         
