@@ -8,7 +8,7 @@ public class Main {
 
         MainPage mainpage = new MainPage(); //to store books
 
-        Ad ad1 = new Ad("Book1", "230202", 1234, "scifi");
+        Ad ad1 = new Ad("Book1", "230202", 1234, "shelf");
         Ad ad2 = new Ad("Book2", "230202", 1234, "books");
 
 
